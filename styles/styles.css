@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+}
+
+#blackjack-game-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/images/blackjack-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 60px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-page-container .welcome-title {
+    font-size: 19px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.landing-page-container #blackjack-logo {
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 60px;
+}
+
+.landing-page-container #start-game-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffd43a;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #151515;
+    font-size: 18px;
+}
+
+.landing-page-container .developer-name {
+    margin-top: 80px;
+    font-weight: 600;
+    color: #ecc32e;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.main-container {
+    padding: 40px 20px;
+    display: grid;
+    justify-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.main-container #blackjack-logo {
+    width: 100%;
+    max-width: 130px;
+}
+
+.main-container .message-alert {
+    letter-spacing: 2px;
+    color: #ffd43a;
+}
+
+.main-container .message-alert,
+.cards-result,
+.sum-result {
+    margin-top: 15px;
+}
+
+.main-container #starting-cards-btn {
+    margin-top: 15px;
+}
+
+.main-container #starting-cards-btn,
+#draw-new-card-btn,
+#restart-game-btn {
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #ffd43a;
+    border-radius: 20px;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: #151515;
+    font-size: 16px;
+}
