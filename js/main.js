@@ -54,17 +54,21 @@ drawNewCardBtn.addEventListener('click', () => {
 })
 
 function drawNewCard() {
-    if (isAlive == true && isBlackjack == false) {
+    if (isAlive === true && isBlackjack === false) {
         let newCard = getRandomCardNumbers()
         sum += newCard
         cards.push(newCard)
         startingCards()
-    } else {
-        alert("Please restart the game or click starting cards again. Thank you.")
+    } else if (isAlive === true && isBlackjack === true) {
+        alert("You already got Blackjack before. The game will be restarted.")
+        window.location.reload()
+    }
+    else {
+        alert("Please restart the game or draw a starting cards first.")
+        window.location.reload()
     }
 }
 
 restartGameBtn.addEventListener('click', () => {
     window.location.reload()
 })
-
